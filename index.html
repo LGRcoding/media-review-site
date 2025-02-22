@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Review</title>
+</head>
+<body>
+  <form id="review-form">
+    <input type="text" name="user" placeholder="Your Name" required>
+    <textarea name="review" placeholder="Your Review" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('review-form').addEventListener('submit', async function(event) {
+      event.preventDefault();
+      const formData = new FormData(this);
+      const response = await fetch('/submit-review', {
+        method: 'POST',
+        body: formData
+      });
+      if (response.redirected) {
+        window.location.href = response.url;
+      }
+    });
+  </script>
+</body>
+</html>
