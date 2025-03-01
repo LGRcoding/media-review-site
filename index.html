@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Submit Review</title>
-</head>
-<body>
-  <form id="review-form">
-    <input type="text" name="user" placeholder="Your Name" required>
-    <textarea name="review" placeholder="Your Review" required></textarea>
-    <button type="submit">Submit</button>
-  </form>
+<html>
+    <head>
+        <title>Nestlet</title>
+        <link rel="stylesheet" type="text/css" href="CSS">
+    </head>
+    <body>
+        <h1>Nestlet</h1>
+        <p>Made by : Luke Reichelt & Henrik Gangeness</p>
+        <br>
+        <p class="main"><b>Skyfall</b></p>
+    <div class="container">    
+        <img src="./Images/skyfall.jpg">
+        <p class="Watch">Watched</p>
+        <input type="checkbox"></div>
+        <p class description>"Skyfall" is the 23rd film in the James Bond series, released in 2012 and directed by Sam Mendes. The film stars Daniel Craig as the iconic British secret agent, James Bond. The plot revolves around Bond's loyalty to M, played by Judi Dench, as her past comes back to haunt her. When MI6 is attacked, Bond must track down and confront a mysterious villain, Silva, portrayed by Javier Bardem, who seeks revenge against M and the agency.
 
-  <script>
-    document.getElementById('review-form').addEventListener('submit', async function(event) {
-      event.preventDefault();
-      const formData = new FormData(this);
-      const response = await fetch('/submit-review', {
-        method: 'POST',
-        body: formData
-      });
-      if (response.redirected) {
-        window.location.href = response.url;
-      }
-    });
-  </script>
-</body>
+            The film explores themes of loyalty, betrayal, and the personal cost of espionage, while showcasing stunning action sequences and breathtaking cinematography. "Skyfall" received critical acclaim for its direction, performances, and a more character-driven narrative, marking a significant entry in the Bond franchise. The film also features a memorable theme song performed by Adele, which won an Academy Award for Best Original Song.</p>
+        <p class="Subtitle"><strong>Actors</strong></p>
+        <dl>
+            <dt>James Bond</dt>
+            <dd>Daniel Craig</dd>
+            <br>
+            <dt>M</dt>
+            <dd>Judi Dench</dd>
+            <br>
+            <dt>Silva</dt>
+            <dd>Javier Bardem</dd>
+            <br>
+            <dt>Gareth Mallory</dt>
+            <dd>Ralph Fiennes</dd>
+        </dl>
+        <p class="runtime"><strong>Runtime</strong></p>
+        <p>2 hrs and 23 min</p>
+    </body>
 </html>
+
