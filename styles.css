@@ -1,0 +1,47 @@
+h1{
+    color: white;
+    text-align: center;
+    font-size: 75px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body  {
+    background-color: rgb(90, 25, 25);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+img   {
+    width: 20%;
+    height: 20%;
+    margin-left: 45px;
+}
+dd {
+    font-size: 15px;
+}
+.Subtitle {
+    font-size: 25px;
+    margin-top: 50px;
+}
+.runtime {
+    font-size: 25px;
+}
+.main{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.container {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+}
+.container img {
+    max-width: 500px; /* Adjust the size of the image */
+    margin-right: 50px; /* Space between image and checkbox */
+}
+.checkbox {
+    /* You can adjust these properties to move the checkbox */
+    margin-left: 10px; /* Space between image and checkbox */
+    transform: translateY(5px); /* Move the checkbox down */
+}
+.Watch {
+    margin-right: 10px;
+}
