@@ -29,4 +29,6 @@ body {
 .logo {
     width: 300px;
     height: auto; 
+    display: block;
+    cursor: pointer;
 }
